@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:id="@+id/rellay_maps"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/red"
+                    android:layout_weight="0.55"
+                    android:clickable="true"
+                    android:foreground="?attr/selectableItemBackground" >
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_centerInParent="true"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:id="@+id/imgView1"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:src="@drawable/ic_public_black_48dp"
+                            android:adjustViewBounds="true"
+                            android:scaleType="centerInside"
+                            android:padding="8dp"
+                            android:tint="@color/white"
+                            android:layout_centerHorizontal="true"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Maps"
+                            android:layout_below="@+id/imgView1"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="5dp"
+                            android:textSize="14sp"/>
+
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rellay_museums"
+                    android:layout_width="match_parent"
+                    android:background="@color/yellow"
+                    android:layout_weight="0.55"
+                    android:clickable="true"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:layout_height="match_parent">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_centerInParent="true"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:id="@+id/imgView2"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:src="@drawable/ic_user_location"
+                            android:adjustViewBounds="true"
+                            android:scaleType="centerInside"
+                            android:padding="8dp"
+                            android:tint="@color/white"
+                            android:layout_centerHorizontal="true"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Museums"
+                            android:layout_below="@+id/imgView2"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="5dp"
+                            android:textSize="14sp"/>
+
+                    </RelativeLayout>
+                </RelativeLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp">
+
+                <RelativeLayout
+                    android:id="@+id/rellay_contactss"
+                    android:layout_width="match_parent"
+                    android:background="@color/lime"
+                    android:layout_weight="0.55"
+                    android:layout_height="match_parent">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_centerInParent="true"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:id="@+id/imgView3"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:src="@drawable/ic_contacts_black_48dp"
+                            android:adjustViewBounds="true"
+                            android:scaleType="centerInside"
+                            android:padding="8dp"
+                            android:tint="@color/white"
+                            android:layout_centerHorizontal="true"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Contacts"
+                            android:layout_below="@+id/imgView3"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="5dp"
+                            android:textSize="14sp"/>
+
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rellay_quizzes"
+                    android:layout_width="match_parent"
+                    android:background="@color/green_dark"
+                    android:layout_weight="0.55"
+                    android:layout_height="match_parent">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_centerInParent="true"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:id="@+id/imgView4"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:src="@drawable/ic_question_answer_black_48dp"
+                            android:adjustViewBounds="true"
+                            android:scaleType="centerInside"
+                            android:padding="8dp"
+                            android:tint="@color/white"
+                            android:layout_centerHorizontal="true"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Quizzes"
+                            android:layout_below="@+id/imgView4"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="5dp"
+                            android:textSize="14sp"/>
+
+                    </RelativeLayout>
+                </RelativeLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp">
+
+                <RelativeLayout
+                    android:id="@+id/rellay_settings"
+                    android:layout_width="match_parent"
+                    android:background="@color/violet"
+                    android:layout_weight="0.55"
+                    android:layout_height="match_parent">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_centerInParent="true"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:id="@+id/imgView5"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:src="@drawable/ic_settings_applications_black_48dp"
+                            android:adjustViewBounds="true"
+                            android:scaleType="centerInside"
+                            android:padding="8dp"
+                            android:tint="@color/white"
+                            android:layout_centerHorizontal="true"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Settings"
+                            android:layout_below="@+id/imgView5"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="5dp"
+                            android:textSize="14sp"/>
+
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rellay_help"
+                    android:layout_width="match_parent"
+                    android:background="@color/darkblue"
+                    android:layout_weight="0.55"
+                    android:layout_height="match_parent">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_centerInParent="true"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:id="@+id/imgView6"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:src="@drawable/ic_help_black_48dp"
+                            android:adjustViewBounds="true"
+                            android:scaleType="centerInside"
+                            android:padding="8dp"
+                            android:tint="@color/white"
+                            android:layout_centerHorizontal="true"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Help"
+                            android:layout_below="@+id/imgView6"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="5dp"
+                            android:textSize="14sp"/>
+
+                    </RelativeLayout>
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
